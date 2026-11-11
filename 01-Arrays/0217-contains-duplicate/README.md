@@ -18,7 +18,7 @@ nums = [1, 2, 3, 1]
 true
 
 **Explanation:**
-The number 1 appears more than once.
+The number 1 appears more than once in the array.
 
 ## Example 2
 
@@ -31,16 +31,28 @@ false
 **Explanation:**
 All elements are distinct.
 
-## Approach
+## Approach: HashSet
 
-To be added after understanding the solution.
+1. Create a HashSet to store unique elements.
+2. Traverse the array using an enhanced for loop.
+3. Check whether the current element already exists in the HashSet using `contains()`.
+4. If the element exists, return `true` because a duplicate is found.
+5. Otherwise, add the element to the HashSet using `add()`.
+6. If the loop completes without finding duplicates, return `false`.
 
 ## Complexity Analysis
 
-- **Time Complexity:** To be added.
-- **Space Complexity:** To be added.
+- **Time Complexity:** O(n) – Each element is processed once on average, with O(1) average HashSet operations.
+- **Space Complexity:** O(n) – The HashSet may store all elements if there are no duplicates.
 
 ## Key Learning
 
-To be added.
+- HashSet in Java
+- Duplicate detection
+- `contains()` and `add()` methods
+- Enhanced for loop
+- Time and space complexity analysis
+
+---
+
 
